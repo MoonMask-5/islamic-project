@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيئتي أمانتي - مشروع الابتكار في الإسلام</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration for Custom Colors & Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064e3b', /* Emerald 900 - Deep Islamic Green */
+                        secondary: '#059669', /* Emerald 600 */
+                        accent: '#d97706', /* Amber 600 - Gold */
+                        earth: '#fbf8f3', /* Warm earthy background */
+                        dark: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #fbf8f3;
+            color: #1e293b;
+        }
+        
+        /* Subtle Islamic Pattern Overlay for Hero */
+        .pattern-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+
+        /* Image Placeholder Styling */
+        .img-placeholder {
+            border: 3px dashed #cbd5e1;
+            background-color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #64748b;
+            transition: all 0.3s ease;
+        }
+        .img-placeholder:hover {
+            border-color: #059669;
+            background-color: #f0fdf4;
+            color: #059669;
+        }
+    </style>
+</head>
+<body class="smooth-scroll antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="bg-primary text-white sticky top-0 z-50 shadow-lg border-b-4 border-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-leaf text-accent text-2xl ml-2"></i>
+                    <span class="font-bold text-xl tracking-wide">بيئتي أمانتي</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 space-x-reverse font-medium">
+                    <a href="#problem" class="hover:text-accent transition">المشكلة والحل</a>
+                    <a href="#implementation" class="hover:text-accent transition">التنفيذ</a>
+                    <a href="#evidence" class="hover:text-accent transition">الأدلة الشرعية</a>
+                    <a href="#application" class="hover:text-accent transition">التطبيق العملي</a>
+                    <a href="#impact" class="hover:text-accent transition">الأثر</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="relative bg-primary text-white overflow-hidden">
+        <div class="pattern-overlay absolute inset-0 z-0"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-center text-center">
+            <span class="text-accent font-bold text-lg mb-4 tracking-wider uppercase">مشروع الابتكار في الإسلام · 2026–2027</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">بيئتي <span class="text-accent">أمانتي</span></h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl font-light">
+                مبادرة ابتكارية لمعالجة تلوث البيئة والمخلفات وتأثيرها على الصحة والمجتمع، انطلاقاً من قيمنا الإسلامية وهويتنا الوطنية.
+            </p>
+            
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl">
+                <p class="text-sm text-accent font-bold mb-3">فريق العمل (مدارس الإمارات الوطنية)</p>
+                <div class="flex flex-wrap justify-center gap-4 text-lg font-semibold">
+                    <span class="bg-white text-primary px-4 py-2 rounded-full shadow"><i class="fa-solid fa-user-graduate ml-2 text-accent"></i>عُبادة</span>
+                    <span class="bg-white text-primary px-4 py-2 rounded-full shadow"><i class="fa-solid fa-user-graduate ml-2 text-accent"></i>عبدالله</span>
+                    <span class="bg-white text-primary px-4 py-2 rounded-full shadow"><i class="fa-solid fa-user-graduate ml-2 text-accent"></i>راشد</span>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Bottom Curve -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.3,200.7,112.5,242.49,108.59,283.61,84.62,321.39,56.44Z" fill="#fbf8f3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- 2. Problem & Objectives -->
+    <section id="problem" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Problem -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg border-r-8 border-accent">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-red-100 p-4 rounded-full text-red-600">
+                            <i class="fa-solid fa-triangle-exclamation text-3xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-dark mr-4">واقع الميدان والمشكلة</h2>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">مخلفات تتراكم وأمانة تُهمَل</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4 text-lg">
+                        الإفراط في المخلفات وضعف إعادة التدوير مدرسياً ومحلياً يلوث الممرات والساحات، ويضر بالصحة العامة وجمال المكان.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        <strong class="text-dark">المبدأ الغائب:</strong> أزمة سلوكية تتعارض مع جوهر الاستخلاف الشرعي، فالإنسان مستخلف ومؤتمن على بيئته، لا مالك لها يعبث بمقدراتها.
+                    </p>
+                </div>
+
+                <!-- Objectives -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg border-r-8 border-secondary">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-100 p-4 rounded-full text-secondary">
+                            <i class="fa-solid fa-bullseye text-3xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-dark mr-4">أهداف المشروع</h2>
+                    </div>
+                    <ul class="space-y-4 text-lg text-gray-700 font-medium">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-secondary mt-1 ml-3 text-xl"></i>
+                            <span>نشر ثقافة الفرز الذكي من المصدر.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-secondary mt-1 ml-3 text-xl"></i>
+                            <span>تحفيز الطلاب بالمكافآت لتبني سلوكيات بيئية إيجابية.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-secondary mt-1 ml-3 text-xl"></i>
+                            <span>ترسيخ المسؤولية البيئية كواجب ديني ومواطنة فاعلة.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Innovative Solution -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold mb-4 text-accent">الحل المبتكر</h2>
+            <p class="text-2xl mb-12 font-medium">حاويات ذكية تكافئ السلوك الصحيح</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/10 hover:bg-white/20 transition duration-300">
+                    <i class="fa-solid fa-recycle text-5xl text-accent mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">فرز دقيق</h3>
+                    <p class="text-gray-300">
+                        حاويات ذكية في ممرات المدرسة، تتعرف حسّاساتها على المواد (بلاستيك، ورق) لضمان الفصل الصحيح من المصدر.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/10 hover:bg-white/20 transition duration-300">
+                    <i class="fa-solid fa-qrcode text-5xl text-accent mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">مسح فوري (QR)</h3>
+                    <p class="text-gray-300">
+                        يمسح الطالب الرمز بعد الإيداع الصحيح لتوثيق مشاركته وحساب وزنه البيئي الموفر بشكل تفاعلي.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/10 hover:bg-white/20 transition duration-300">
+                    <i class="fa-solid fa-gift text-5xl text-accent mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">نقاط ومكافآت</h3>
+                    <p class="text-gray-300">
+                        نقاط رقمية تتحول إلى امتيازات مدرسية وتكريم دوري، لترسيخ عادة يومية وتنافس إيجابي بين الطلبة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Implementation Plan -->
+    <section id="implementation" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-primary mb-4">خطة العمل والتنفيذ</h2>
+                <p class="text-xl text-gray-600">مسار منهجي متدرج يقوده فريق العمل من التخطيط إلى الميدان</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Timeline Steps -->
+                <div class="space-y-8">
+                    <!-- Phase 1 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0 mr-4 rtl:ml-4 rtl:mr-0">
+                            <div class="w-12 h-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-xl shadow-lg">1</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-2">المرحلة الأولى: التأسيس</h3>
+                            <p class="text-gray-600">البحث والتصميم الهيكلي وتحديد الاحتياجات الميدانية بدقة وتوزيع الأدوار، ووضع المخططات الهندسية للحاوية وحساساتها.</p>
+                        </div>
+                    </div>
+                    <!-- Phase 2 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0 mr-4 rtl:ml-4 rtl:mr-0">
+                            <div class="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-bold text-xl shadow-lg">2</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-2">المرحلة الثانية: النمذجة</h3>
+                            <p class="text-gray-600">بناء مجسمات للحاويات باستخدام خامات معاد تدويرها، مع دمج قارئ الرموز وتجربة دقة التمييز بين الورق والبلاستيك.</p>
+                        </div>
+                    </div>
+                    <!-- Phase 3 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0 mr-4 rtl:ml-4 rtl:mr-0">
+                            <div class="w-12 h-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-xl shadow-lg">3</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-2">المرحلة الثالثة: الإطلاق</h3>
+                            <p class="text-gray-600">نشر النماذج في أروقة المدرسة وإطلاق ورش تفاعلية تشرح آلية النقاط وأهمية المشاركة الفردية كأمانة بيئية.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Images Placeholder Box -->
+                <div class="h-full min-h-[400px]">
+                    <!-- PLACEHOLDER FOR TEAM WORKING PHOTOS -->
+                    <!-- استبدل هذا الـ div بوسوم <img> الخاصة بصور عمل الفريق -->
+                    <div class="img-placeholder w-full h-full rounded-3xl p-8">
+                        <i class="fa-solid fa-camera-retro text-6xl mb-4 opacity-50"></i>
+                        <h3 class="text-2xl font-bold mb-2">مساحة لصور فريق العمل</h3>
+                        <p class="text-sm">أضف هنا صور الطلاب (عبادة، عبدالله، راشد) أثناء بناء المجسمات أو التخطيط للمشروع.</p>
+                        <code class="mt-4 bg-gray-200 text-gray-700 p-2 rounded text-xs ltr" dir="ltr">&lt;img src="team-work.jpg" alt="فريق العمل" class="rounded-2xl object-cover w-full h-full"&gt;</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Islamic Evidence -->
+    <section id="evidence" class="py-20 bg-emerald-50 border-y border-emerald-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-primary mb-4">الأدلة الشرعية</h2>
+                <p class="text-xl text-gray-600">حفظ البيئة عبادة وأمانة، والرؤية الإسلامية تؤصل حماية الموارد كفريضة</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Quran -->
+                <div class="bg-white p-8 rounded-tr-3xl rounded-bl-3xl shadow-lg relative overflow-hidden border-t-4 border-secondary">
+                    <i class="fa-solid fa-book-quran absolute top-[-20px] left-[-20px] text-9xl text-emerald-50 opacity-50 transform -rotate-12"></i>
+                    <div class="relative z-10 text-center">
+                        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 text-secondary text-2xl">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4">القرآن الكريم</h3>
+                        <p class="text-2xl text-primary font-bold leading-relaxed mb-4">
+                            ﴿وَلَا تُفْسِدُوا فِي الْأَرْضِ بَعْدَ إِصْلَاحِهَا﴾
+                        </p>
+                        <p class="text-sm text-gray-500">سورة الأعراف (56) - نهي عن إفساد الموارد وإلزام بعمارة الأرض.</p>
+                    </div>
+                </div>
+
+                <!-- Hadith -->
+                <div class="bg-white p-8 rounded-tl-3xl rounded-br-3xl shadow-lg relative overflow-hidden border-t-4 border-accent">
+                    <i class="fa-solid fa-hands-holding-circle absolute top-[-20px] left-[-20px] text-9xl text-amber-50 opacity-50 transform -rotate-12"></i>
+                    <div class="relative z-10 text-center">
+                        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 text-accent text-2xl">
+                            <i class="fa-solid fa-comment-dots"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4">الحديث الشريف</h3>
+                        <p class="text-xl text-primary font-bold leading-relaxed mb-4">
+                            «الإِيمَانُ بِضْعٌ وَسَبْعُونَ شُعْبَةً... وَأَدْنَاهَا إِمَاطَةُ الأَذَى عَنِ الطَّرِيقِ»
+                        </p>
+                        <p class="text-sm text-gray-500">صحيح مسلم - إزالة المخلفات عبادة تقرب إلى الله.</p>
+                    </div>
+                </div>
+
+                <!-- Seerah -->
+                <div class="bg-white p-8 rounded-tr-3xl rounded-bl-3xl shadow-lg relative overflow-hidden border-t-4 border-secondary">
+                    <i class="fa-solid fa-mosque absolute top-[-20px] left-[-20px] text-9xl text-emerald-50 opacity-50 transform -rotate-12"></i>
+                    <div class="relative z-10 text-center">
+                        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 text-secondary text-2xl">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-4">السيرة النبوية</h3>
+                        <p class="text-lg text-primary font-bold leading-relaxed mb-2">
+                            النهي عن الإسراف في الماء
+                        </p>
+                        <p class="text-lg text-primary font-bold leading-relaxed mb-4 border-t pt-2">
+                            نظام الحِمى النبوي للمحميات
+                        </p>
+                        <p class="text-sm text-gray-500">تأصيل لاستدامة الموارد وحماية الحياة الفطرية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. UAE National Identity & Leadership -->
+    <section class="py-20 relative overflow-hidden bg-dark text-white">
+        <!-- Abstract shape background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0,100 100,0 100,100"/>
+            </svg>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-accent mb-4">الهوية الوطنية وممارسات القادة</h2>
+                <p class="text-xl text-gray-300">من رؤية الوالد المؤسس إلى الريادة العالمية في العمل المناخي</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/20">
+                    <i class="fa-solid fa-quote-right text-4xl text-accent mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">إرث الوالد المؤسس الشيخ زايد (طيب الله ثراه)</h3>
+                    <p class="text-gray-200 leading-relaxed text-lg">
+                        قهر التصحر وزرع ملايين الأشجار؛ فالبيئة أمانة للأجيال لا هبة للاستهلاك. مبادرتنا هي امتداد لنهجه الخالد في حماية الطبيعة.
+                    </p>
+                </div>
+                
+                <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/20">
+                    <i class="fa-solid fa-globe text-4xl text-secondary mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">عام الاستدامة والحياد المناخي 2050</h3>
+                    <p class="text-gray-200 leading-relaxed text-lg">
+                        الاستدامة نهج حياة يومي، والحاويات الذكية هي استجابة شبابية واعية وطموحة بسواعد وطنية تبتكر وتتحمل المسؤولية لتقليل الانبعاثات.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Practical Application (With Placeholders for Cleanup) -->
+    <section id="application" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <!-- Text Content -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-4xl font-extrabold text-primary mb-4">الجانب التطبيقي</h2>
+                    <p class="text-2xl text-accent font-bold mb-8">من النظرية إلى الميدان</p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border-r-4 border-secondary">
+                            <h4 class="text-xl font-bold text-dark mb-2"><i class="fa-solid fa-users text-secondary ml-2"></i>حملة تنظيف ميدانية</h4>
+                            <p class="text-gray-600">تنظيم نشاط تطوعي في شواطئ ومتنزهات أبوظبي لمعايشة المشكلة وحلها ميدانياً في عطلة نهاية الأسبوع.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border-r-4 border-accent">
+                            <h4 class="text-xl font-bold text-dark mb-2"><i class="fa-solid fa-hands-bubbles text-accent ml-2"></i>عمل جماعي للفرز</h4>
+                            <p class="text-gray-600">جمع المخلفات وفرزها حسب الخامات تمهيداً لإعادة تدويرها، وربطها بنقاط تحاكي النظام الذكي.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border-r-4 border-primary">
+                            <h4 class="text-xl font-bold text-dark mb-2"><i class="fa-solid fa-heart text-primary ml-2"></i>تجسيد القيم</h4>
+                            <p class="text-gray-600">إماطة الأذى وإصلاح الأرض يجسدان القيم الإسلامية لخدمة المجتمع، وتعزيز الفخر بالوطن.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photos Placeholders (Grid) -->
+                <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4 h-[500px]">
+                    <!-- Placeholder 1 (Large) -->
+                    <div class="col-span-2 img-placeholder rounded-2xl">
+                        <i class="fa-solid fa-image text-5xl mb-2 opacity-40"></i>
+                        <span class="font-bold">صورة حملة التنظيف (الشاطئ/الحديقة)</span>
+                        <code class="mt-2 text-xs ltr" dir="ltr">&lt;img src="..."&gt;</code>
+                    </div>
+                    <!-- Placeholder 2 -->
+                    <div class="img-placeholder rounded-2xl">
+                        <i class="fa-solid fa-recycle text-4xl mb-2 opacity-40"></i>
+                        <span class="font-bold text-sm">صورة فرز المخلفات</span>
+                    </div>
+                    <!-- Placeholder 3 -->
+                    <div class="img-placeholder rounded-2xl">
+                        <i class="fa-solid fa-people-group text-4xl mb-2 opacity-40"></i>
+                        <span class="font-bold text-sm">صورة جماعية للفريق</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Impact -->
+    <section id="impact" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-primary mb-4">أثر الحل على الفرد والمجتمع</h2>
+                <p class="text-xl text-gray-600">استدامة المكان تعكس رقي السلوك وحصانة المجتمع</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Individual -->
+                <div class="bg-white rounded-3xl p-10 shadow-xl text-center transform transition hover:-translate-y-2">
+                    <div class="w-24 h-24 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-user-shield text-5xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">على مستوى الفرد</h3>
+                    <ul class="text-right space-y-3 text-gray-600 text-lg">
+                        <li><i class="fa-solid fa-caret-left text-accent ml-2"></i>تحصيل الثواب الشرعي بإماطة الأذى.</li>
+                        <li><i class="fa-solid fa-caret-left text-accent ml-2"></i>تنمية الانضباط الذاتي ونمط حياة صحي.</li>
+                        <li><i class="fa-solid fa-caret-left text-accent ml-2"></i>بناء شخصية مسؤولة تحترم الموارد وتتجنب التبذير.</li>
+                    </ul>
+                </div>
+
+                <!-- Society -->
+                <div class="bg-white rounded-3xl p-10 shadow-xl text-center transform transition hover:-translate-y-2">
+                    <div class="w-24 h-24 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-city text-5xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">على مستوى المجتمع والوطن</h3>
+                    <ul class="text-right space-y-3 text-gray-600 text-lg">
+                        <li><i class="fa-solid fa-caret-left text-secondary ml-2"></i>تقليص النفايات الموجهة للمكبات.</li>
+                        <li><i class="fa-solid fa-caret-left text-secondary ml-2"></i>حماية الموارد الطبيعية للأجيال القادمة.</li>
+                        <li><i class="fa-solid fa-caret-left text-secondary ml-2"></i>تعزيز روح المبادرة والتماسك داخل المجتمع المدرسي.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Innovative Presentation Methods -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-primary mb-12">وسائل العرض المبتكرة (التقنية في خدمة الاستدامة)</h2>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <!-- 3D Model -->
+                <div class="flex flex-col items-center max-w-xs">
+                    <div class="bg-white p-6 rounded-full shadow-lg border border-gray-100 mb-4 text-primary">
+                        <i class="fa-solid fa-cube text-5xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">مجسم ثلاثي الأبعاد</h4>
+                    <p class="text-gray-500 text-sm">نموذج مصغر يعرض آلية الفرز والحساسات الإلكترونية بوضوح.</p>
+                </div>
+                
+                <!-- Connection Line (Hidden on Mobile) -->
+                <div class="hidden md:block w-24 border-t-2 border-dashed border-gray-300"></div>
+
+                <!-- Digital QR -->
+                <div class="flex flex-col items-center max-w-xs">
+                    <div class="bg-white p-6 rounded-full shadow-lg border border-gray-100 mb-4 text-accent">
+                        <i class="fa-solid fa-qrcode text-5xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">كتيب رقمي تفاعلي (QR)</h4>
+                    <p class="text-gray-500 text-sm">إلغاء الهدر الورقي بكتيب يستعرض تفاصيل المشروع بمسحة هاتف.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer / Conclusion -->
+    <footer class="bg-primary text-white py-12 border-t-[6px] border-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+            <i class="fa-solid fa-leaf text-4xl text-secondary mb-6"></i>
+            <h2 class="text-3xl font-bold mb-4">حماية البيئة: عبادة نتقرب بها إلى الله، وواجب وطني نحو الإمارات</h2>
+            <p class="text-xl text-gray-300 font-light mb-8">بيئتي أمانتي · فلنصن الأمانة معاً</p>
+            
+            <div class="w-full h-px bg-white/20 my-6"></div>
+            
+            <p class="text-sm text-gray-400">
+                مشروع الابتكار في الإسلام (2026-2027) | مدارس الإمارات الوطنية
+                <br>
+                <span class="font-bold text-gray-300 mt-2 block">فريق العمل: عُبادة · عبدالله · راشد</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
